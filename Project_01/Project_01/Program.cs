@@ -55,44 +55,42 @@ namespace Project_01
                         if (disNumber > 4 || dis == false)
                         {
                             Console.WriteLine(@"
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
-                                                                           
-                                                                           
-                        GC_Calculator                               
-                          v2.1 beta                                 
-                                                                          
-                       Powered by Jian                                  
-                                                                           
-                  Welcome to send feedbacks                         
-            if you find bugs or have some good ideas!                
-                                                                            
-        Feedback email: xxx@outlook.com      Thank you  ^_^             
-                                                                                        
-     
-                                                                      
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■                                                                           ■
+■                                                                           ■
+■                               GC_Calculator                               ■
+■                                 v2.1 beta                                 ■
+■                                                                           ■
+■                              Powered by Jian                              ■    
+■                                                                           ■
+■                         Welcome to send feedbacks                         ■
+■                  if you find bugs or have some good ideas!                ■
+■                                                                           ■ 
+■           Feedback email: xxx@outlook.com      Thank you  ^_^             ■
+■                                                                           ■
+■                                                                           ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ");
                         }
                         else
                         {
                             Console.WriteLine(@"
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
-                                                                           
-                                                                           
-                        GC_Calculator                               
-                          v2.1 beta                                 
-                                                                          
-                       Powered by Jian                                  
-                                                                           
-                  Welcome to send feedbacks                         
-            if you find bugs or have some good ideas!                
-                                                                            
-        Feedback email: xxx@outlook.com      Thank you  ^_^             
-                                                                           
-          1. What's new     2. How to use     3. exit                  
-     
-                                                                      
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■                                                                           ■
+■                                                                           ■
+■                               GC_Calculator                               ■
+■                                 v2.1 beta                                 ■
+■                                                                           ■
+■                              Powered by Jian                              ■    
+■                                                                           ■
+■                         Welcome to send feedbacks                         ■
+■                  if you find bugs or have some good ideas!                ■
+■                                                                           ■ 
+■           Feedback email: xxx@outlook.com      Thank you  ^_^             ■
+■                                                                           ■
+■              1. What's new     2. How to use     3. exit                  ■
+■                                                                           ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ");
                         }
                         if (_dp >= 1)
@@ -151,38 +149,38 @@ namespace Project_01
                         if (disNumber > 4 || dis == false)
                         {
                             Console.WriteLine(@"
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
                                                                            
                                                                            
-                          分数计算器                               
-                         v2.1 测试副本                                 
+                                  分数计算器                               
+                                v2.1 测试副本                                 
                                                         
-                   制作：Vergil      欢迎反馈 
-                                                       
-            反馈邮箱: xxx@outlook.com      多谢 ^_^            
+                           制作：Vergil      欢迎反馈 
+                                                         
+                    反馈邮箱: xxx@outlook.com      多谢 ^_^            
                                                                                           
      
                                                                       
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ");
                         }
                         else
                         {
                             Console.WriteLine(@"
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
                                                                            
                                                                            
-                          分数计算器                               
-                         v2.1 测试副本                                 
+                                  分数计算器                               
+                                v2.1 测试副本                                 
                                                         
-                   制作：Vergil      欢迎反馈 
-                                                       
-            反馈邮箱: xxx@outlook.com      多谢 ^_^            
-                                                                           
-          1. What's new     2. How to use     3. exit                  
+                           制作：Vergil      欢迎反馈 
+                                                         
+                    反馈邮箱: xxx@outlook.com      多谢 ^_^            
+          
+                  1. What's new     2. How to use     3. exit
      
                                                                       
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ");
                         }
                         if (_dp >= 1)
