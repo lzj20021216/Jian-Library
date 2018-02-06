@@ -1,0 +1,7 @@
+C:\Users\lzjin\source\repos\HappyBirthday\HappyBirthday\bin\Debug\HappyBirthday.exe.config
+C:\Users\lzjin\source\repos\HappyBirthday\HappyBirthday\bin\Debug\HappyBirthday.exe
+C:\Users\lzjin\source\repos\HappyBirthday\HappyBirthday\bin\Debug\HappyBirthday.pdb
+C:\Users\lzjin\source\repos\HappyBirthday\HappyBirthday\obj\Debug\HappyBirthday.csprojResolveAssemblyReference.cache
+C:\Users\lzjin\source\repos\HappyBirthday\HappyBirthday\obj\Debug\HappyBirthday.csproj.CoreCompileInputs.cache
+C:\Users\lzjin\source\repos\HappyBirthday\HappyBirthday\obj\Debug\HappyBirthday.exe
+C:\Users\lzjin\source\repos\HappyBirthday\HappyBirthday\obj\Debug\HappyBirthday.pdb
