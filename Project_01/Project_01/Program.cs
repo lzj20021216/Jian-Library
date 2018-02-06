@@ -14,7 +14,7 @@ namespace Project_01
         public static bool _ex = true;
         public static bool _languager = true;
         public static string[] _en_US = { "Maths: ", "Chinese: ", "English: ", "Politics: ", "History: ", "Chemistry: ", "Physics: ", "Biology: ", "Geography: ", "PE: ", "Press any key to exit . . .", "Inputted error, try again please!", "Your total marks:{0} \n\nYour last marks: ", "Congratulations!\nYou've got {0} more marks~", "It seems that there's no differences between the marks.\nKeep trying!", "Emm...Just keep trying and you'll be successful!", "Would you like to calculate others' scores?\t y/n" };
-        public static string[] _zh_CN = { "数学：", "语文：", "英语： ", "政治：", "历史：", "化学：", "物理", "生物：", "地理：", "体育：", "按下任意键退出 . . .", "输入有误，请重新输入！", "你的总分数：{0} \n\n上次的分数：", "太棒了！你比上次多得了{0}分", "继续保持！", "继续努力！", };
+        public static string[] _zh_CN = { "数学：", "语文：", "英语： ", "政治：", "历史：", "化学：", "物理", "生物：", "地理：", "体育：", "按下任意键退出 . . .", "输入有误，请重新输入！", "你的总分数：{0} \n\n上次的分数：", "太棒了！你比上次多得了{0}分", "继续保持！", "继续努力！", "你想计算其他人的成绩吗？" };
         public static string[] _languageChooser = new string[17];
         public static string _languageReceiver = null;
         public static string _displayBoard = "0";
@@ -55,42 +55,44 @@ namespace Project_01
                         if (disNumber > 4 || dis == false)
                         {
                             Console.WriteLine(@"
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
-■                                                                           ■
-■                                                                           ■
-■                               GC_Calculator                               ■
-■                                 v2.1 beta                                 ■
-■                                                                           ■
-■                              Powered by Jian                              ■    
-■                                                                           ■
-■                         Welcome to send feedbacks                         ■
-■                  if you find bugs or have some good ideas!                ■
-■                                                                           ■ 
-■           Feedback email: xxx@outlook.com      Thank you  ^_^             ■
-■                                                                           ■
-■                                                                           ■
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+                                                                           
+                                                                           
+                        GC_Calculator                               
+                          v2.1 beta                                 
+                                                                          
+                       Powered by Jian                                  
+                                                                           
+                  Welcome to send feedbacks                         
+            if you find bugs or have some good ideas!                
+                                                                            
+        Feedback email: xxx@outlook.com      Thank you  ^_^             
+                                                                                        
+     
+                                                                      
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ");
                         }
                         else
                         {
                             Console.WriteLine(@"
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
-■                                                                           ■
-■                                                                           ■
-■                               GC_Calculator                               ■
-■                                 v2.1 beta                                 ■
-■                                                                           ■
-■                              Powered by Jian                              ■    
-■                                                                           ■
-■                         Welcome to send feedbacks                         ■
-■                  if you find bugs or have some good ideas!                ■
-■                                                                           ■ 
-■           Feedback email: xxx@outlook.com      Thank you  ^_^             ■
-■                                                                           ■
-■              1. What's new     2. How to use     3. exit                  ■
-■                                                                           ■
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+                                                                           
+                                                                           
+                        GC_Calculator                               
+                          v2.1 beta                                 
+                                                                          
+                       Powered by Jian                                  
+                                                                           
+                  Welcome to send feedbacks                         
+            if you find bugs or have some good ideas!                
+                                                                            
+        Feedback email: xxx@outlook.com      Thank you  ^_^             
+                                                                           
+          1. What's new     2. How to use     3. exit                  
+     
+                                                                      
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ");
                         }
                         if (_dp >= 1)
@@ -149,37 +151,38 @@ namespace Project_01
                         if (disNumber > 4 || dis == false)
                         {
                             Console.WriteLine(@"
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
-
-
-                                  分数计算器
-                                  v2.1 beta
-
-                         制作：Vergil      欢迎反馈
-		                                   
-                  反馈邮箱: xxx@outlook.com      多谢 ^_^
-
-				  
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ 
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+                                                                           
+                                                                           
+                          分数计算器                               
+                         v2.1 测试副本                                 
+                                                        
+                   制作：Vergil      欢迎反馈 
+                                                       
+            反馈邮箱: xxx@outlook.com      多谢 ^_^            
+                                                                                          
+     
+                                                                      
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ");
                         }
                         else
                         {
                             Console.WriteLine(@"
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
-
-
-                                  分数计算器
-                                  v2.1 beta
-
-                         制作：Vergil      欢迎反馈
-		                                   
-                  反馈邮箱: xxx@outlook.com      多谢 ^_^
-
-               1. What's new     2. How to use     3. exit
-
-				  
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ 
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+                                                                           
+                                                                           
+                          分数计算器                               
+                         v2.1 测试副本                                 
+                                                        
+                   制作：Vergil      欢迎反馈 
+                                                       
+            反馈邮箱: xxx@outlook.com      多谢 ^_^            
+                                                                           
+          1. What's new     2. How to use     3. exit                  
+     
+                                                                      
+■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ");
                         }
                         if (_dp >= 1)
@@ -361,7 +364,7 @@ namespace Project_01
         {
             for (int i = 0; i < 2; i++)
             {
-                if (i == 1)
+                if (i == 1 || i == 3)
                 {
                     permission = "n";
                 }
