@@ -8,6 +8,7 @@ namespace Project_01
 {
     class Program
     {
+        //来访的大神们请主动无视这一整页的垃圾代码
         public static int _totalScore = 0;
         public static int _difference = 0;
         public static bool _rec = true;
