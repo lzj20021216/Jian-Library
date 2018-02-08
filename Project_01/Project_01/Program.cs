@@ -8,8 +8,6 @@ namespace Project_01
 {
     class Program
     {
-        //来访的大神们请主动无视这一整页的垃圾代码
-        //另外本人英文水平渣渣，对于拼写或语法错误请无视
         public static int _totalScore = 0;
         public static int _difference = 0;
         public static bool _rec = true;
@@ -42,7 +40,7 @@ namespace Project_01
                 }
                 else
                 {
-                    Console.WriteLine(@"Choose your language/请选择你的语言
+                    Console.WriteLine(@"Choose your language first/先从选择语言开始吧
 1. English
 2. 中文（简体）");
                     _languageReceiver = Console.ReadLine();
@@ -124,7 +122,10 @@ namespace Project_01
                                 Console.WriteLine(@"
 ----------------------------------------------------------------------------
 
-
+1. You can close the program by inputting 'exit' while using it.
+2. You can input one of the numbers on the 'DisplayBoard' to use its function
+   in this interface.
+   If you want to start now, just press 'Enter' key on your keyboard.
 
 ----------------------------------------------------------------------------
 ");
@@ -199,9 +200,9 @@ namespace Project_01
                                 Console.WriteLine(@"
 ----------------------------------------------------------------------------
 
-1. New UI
-2. Lighter and more powerful
-3. Less bugs
+1. 新的界面
+2. 提高了轻便性和实用性
+3. 减少了bug
 
 ----------------------------------------------------------------------------
 ");
@@ -214,7 +215,10 @@ namespace Project_01
                                 Console.WriteLine(@"
 ----------------------------------------------------------------------------
 
-
+1. 在使用时，输入 'exit'（不区分大小写），以关闭此程序
+ （在本界面时除外，应输入数字 '3'）
+2. 在本界面，输入‘功能板’上的数字，以进入对应功能，如果想直接开始使用程序，
+   直接按下键盘上的回车键即可
 
 ----------------------------------------------------------------------------
 ");
