@@ -180,7 +180,7 @@ namespace Project_01
                                                          
                     反馈邮箱: xxx@outlook.com      多谢 ^_^            
           
-                  1. What's new     2. How to use     3. exit
+                  1. 新增内容     2. 如何使用     3. 关闭程序
      
                                                                       
 ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
