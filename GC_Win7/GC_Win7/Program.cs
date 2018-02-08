@@ -193,7 +193,6 @@ namespace GC_Win7
                         {
                             _displayBoard = Console.ReadLine();
                         }
-                        _displayBoard = Console.ReadLine();
                         switch (_displayBoard)
                         {
                             case "1":
