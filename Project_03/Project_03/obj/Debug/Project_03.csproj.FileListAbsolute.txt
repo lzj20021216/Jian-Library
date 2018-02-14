@@ -1,0 +1,7 @@
+C:\Users\lzjin\source\repos\Project_03\Project_03\bin\Debug\Project_03.exe.config
+C:\Users\lzjin\source\repos\Project_03\Project_03\bin\Debug\Project_03.exe
+C:\Users\lzjin\source\repos\Project_03\Project_03\bin\Debug\Project_03.pdb
+C:\Users\lzjin\source\repos\Project_03\Project_03\obj\Debug\Project_03.csprojResolveAssemblyReference.cache
+C:\Users\lzjin\source\repos\Project_03\Project_03\obj\Debug\Project_03.csproj.CoreCompileInputs.cache
+C:\Users\lzjin\source\repos\Project_03\Project_03\obj\Debug\Project_03.exe
+C:\Users\lzjin\source\repos\Project_03\Project_03\obj\Debug\Project_03.pdb
