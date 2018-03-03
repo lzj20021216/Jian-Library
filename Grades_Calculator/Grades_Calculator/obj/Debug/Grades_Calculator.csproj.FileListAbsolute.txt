@@ -4,3 +4,4 @@ C:\Users\Jian\source\repos\Grades_Calculator\Grades_Calculator\bin\Debug\Grades_
 C:\Users\Jian\source\repos\Grades_Calculator\Grades_Calculator\obj\Debug\Grades_Calculator.csproj.CoreCompileInputs.cache
 C:\Users\Jian\source\repos\Grades_Calculator\Grades_Calculator\obj\Debug\Grades_Calculator.exe
 C:\Users\Jian\source\repos\Grades_Calculator\Grades_Calculator\obj\Debug\Grades_Calculator.pdb
+C:\Users\Jian\source\repos\Grades_Calculator\Grades_Calculator\obj\Debug\Grades_Calculator.csprojResolveAssemblyReference.cache

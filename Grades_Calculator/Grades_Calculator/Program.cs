@@ -26,7 +26,7 @@ namespace Grades_Calculator
 
             if (_runner)
             {
-
+                #region Languager
                 if (_languager)
                 {
                     if (_recTimer == 0)
@@ -73,6 +73,8 @@ namespace Grades_Calculator
                             }
                             break;
                     }
+                    #endregion
+                    #region Display Board
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine(@"
 ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
@@ -87,11 +89,11 @@ namespace Grades_Calculator
 ■                  {4}                 ■
 ■                                                                           ■ 
 ■           {5}             ■", _languageChooser[0], _languageChooser[1], _languageChooser[2], _languageChooser[3], _languageChooser[4], _languageChooser[5]);
-                    if (_disTimer == 0)
-                    {
-                        Console.WriteLine(@"■                                                                           ■
+                    //if (_disTimer == 0)
+                    //{
+                    Console.WriteLine(@"■                                                                           ■
 ■              1. What's new     2. How to use     3. exit                  ■");
-                    }
+                    //}
                     Console.WriteLine(@"■                                                                           ■
 ■                                                                           ■
 ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
@@ -101,9 +103,15 @@ namespace Grades_Calculator
                         _displayBoard = Console.ReadLine();
                         Features(_displayBoard, args);
                     }
+                    #endregion
                 }
             }
         }
+        /// <summary>
+        /// DisplayBoard
+        /// </summary>
+        /// <param name="disp">The display number</param>
+        /// <param name="args">Main Method</param>
         public static void Features(string disp, string[] args)
         {
             switch (disp)
@@ -146,11 +154,18 @@ namespace Grades_Calculator
                 default:
                     Breaker(disp, args);
                     _disTimer += 1;
+                    _recTimer++;
                     Console.Clear();
                     Main(args);
                     break;
             }
         }
+        /// <summary>
+        /// A method to close the program
+        /// </summary>
+        /// <param name="input">The user's input</param>
+        /// <param name="args">Main Method</param>
+        /// <returns></returns>
         public static bool Breaker(string input, string[] args)
         {
             if (input == "exit" || input == "EXIT" || _displayBoard == "3")
