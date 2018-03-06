@@ -11,9 +11,9 @@ namespace Grades_Calculator
         public static string _languageReceiver = null;
         public static string[] _en_US = { "Maths: ", "Chinese: ", "English: ", "Politics: ", "History: ", "Chemistry: ", "Physics: ", "Biology: ", "Geography: ", "PE: ", "Press any key to exit . . .", "Inputted error, try again please!", "Your total marks:{0} \n\nYour last marks: ", "Congratulations!\nYou've got {0} more marks~", "It seems that there's no differences between the marks.\nKeep trying!", "Emm...Just keep trying and you'll be successful!", "Would you like to calculate others' scores?\t y/n", "GC_Calculator", "v2.1 beta", "Powered by Jian", "Welcome to send feedbacks", "if you find bugs or have some good ideas", "Feedback email: xxx@outlook.com      Thank you  ^_^", "New UI", "Lighter and more powerful", "Less bugs", "You can close the program by inputting 'exit' while using it.", @"You can input one of the numbers on the 'DisplayBoard' to use its function
    in this interface.
-   If you want to start now, just press 'Enter' key on your keyboard.", };
+   If you want to start now, just press 'Enter' key on your keyboard.", "Learn about the features\"(Just input one of the numbers above\"): "};
         public static string[] _zh_CN = { "分数计算器", "版本 2.1 测试副本", "Jian 制作", "如果在使用本程序时遇到问题或有好的建议", "欢迎随时反馈", "反馈邮箱: xxx@outlook.com      多谢 ^_^", "数学：", "语文：", "英语： ", "政治：", "历史：", "化学：", "物理", "生物：", "地理：", "体育：", "按下任意键退出 . . .", "输入有误，请重新输入！", "你的总分数：{0} \n\n上次的分数：", "太棒了！你比上次多得了{0}分", "继续保持！", "继续努力！", "你想计算其他人的成绩吗？" };
-        public static string[] _languageChooser = new string[28];
+        public static string[] _languageChooser = new string[29];
         public static string _displayBoard = null;
         public static int _recTimer = 0;
         public static int _disTimer = 0;
@@ -110,6 +110,7 @@ namespace Grades_Calculator
 ");
                     if (_disTimer == 0)
                     {
+                        Console.Write(_languageChooser[28]);
                         _displayBoard = Console.ReadLine();
                         Features(_displayBoard, args);
                     }
