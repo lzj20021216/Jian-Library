@@ -9,10 +9,9 @@ namespace Grades_Calculator
     class Program
     {
         public static string _languageReceiver = null;
-        public static string[] _en_US = { "Maths: ", "Chinese: ", "English: ", "Politics: ", "History: ", "Chemistry: ", "Physics: ", "Biology: ", "Geography: ", "PE: ", "Press any key to exit . . .", "Inputted error, try again please!", "Your total marks:{0} \n\nYour last marks: ", "Congratulations!\nYou've got {0} more marks~", "It seems that there's no differences between the marks.\nKeep trying!", "Emm...Just keep trying and you'll be successful!", "Would you like to calculate others' scores?\t y/n", "GC_Calculator", "v2.1 beta", "Powered by Jian", "Welcome to send feedbacks", "if you find bugs or have some good ideas", "Feedback email: xxx@outlook.com      Thank you  ^_^", "New UI", "Lighter and more powerful", "Less bugs", "You can close the program by inputting 'exit' while using it.", @"You can input one of the numbers on the 'DisplayBoard' to use its function
-   in this interface.
-   If you want to start now, just press 'Enter' key on your keyboard.", "Learn about the features\"(Just input one of the numbers above\"): "};
-        public static string[] _zh_CN = { "分数计算器", "版本 2.1 测试副本", "Jian 制作", "如果在使用本程序时遇到问题或有好的建议", "欢迎随时反馈", "反馈邮箱: xxx@outlook.com      多谢 ^_^", "数学：", "语文：", "英语： ", "政治：", "历史：", "化学：", "物理", "生物：", "地理：", "体育：", "按下任意键退出 . . .", "输入有误，请重新输入！", "你的总分数：{0} \n\n上次的分数：", "太棒了！你比上次多得了{0}分", "继续保持！", "继续努力！", "你想计算其他人的成绩吗？" };
+        public static string[] _en_US = { "Maths: ", "Chinese: ", "English: ", "Politics: ", "History: ", "Chemistry: ", "Physics: ", "Biology: ", "Geography: ", "PE: ", "Press any key to exit . . .", "Inputted error, try again please!", "Your total marks:{0} \n\nYour last marks: ", "Congratulations!\nYou've got {0} more marks~", "It seems that there's no differences between the marks.\nKeep trying!", "Emm...Just keep trying and you'll be successful!", "Would you like to calculate others' scores?\t y/n", "GC_Calculator", "v2.1 beta", "Powered by Jian", "Welcome to send feedbacks", "if you find bugs or have some good ideas", "Feedback email: xxx@outlook.com      Thank you  ^_^", "New UI", "Lighter and more powerful", "Less bugs", "You can close the program by inputting 'exit' while using it.", "Just input one of the numbers above or leave blank to skip\nLearn about the features: " };
+        public static string[] _zh_CN = { "数学：", "语文：", "英语： ", "政治：", "历史：", "化学：", "物理", "生物：", "地理：", "体育：", "按下任意键退出 . . .", "输入有误，请重新输入！", "你的总分数：{0} \n\n上次的分数：", "太棒了！你比上次多得了{0}分", "继续保持！", "继续努力！", "你想计算其他人的成绩吗？", "分数计算器", "版本 2.1 测试副本", "Jian 制作", "如果在使用本程序时遇到问题或有好的建议", "欢迎随时反馈", "反馈邮箱: xxx@outlook.com      多谢 ^_^", "程序体积更小，功能更加实用", "修复漏洞", "在使用时，通过输入 \"exit\" 来退出程序",
+"输入以上数字序号之一，或者保留空白以跳过\n了解功能："};
         public static string[] _languageChooser = new string[29];
         public static string _displayBoard = null;
         public static int _recTimer = 0;
@@ -25,6 +24,7 @@ namespace Grades_Calculator
         public static bool _breaker = true;
         public static bool _rec = true;
         public static bool _ex = true;
+        public static bool _languageController = true;
         static void Main(string[] args)
         {
 
@@ -45,49 +45,51 @@ namespace Grades_Calculator
                         _languageReceiver = Console.ReadLine();
                         Breaker(_languageReceiver, args);
                     }
-                    switch (_languageReceiver)
+                    if (_languageController)
                     {
-                        case "1":
-                            for (int i = 0; i < _languageChooser.Length; i++)
-                            {
-                                _languageChooser[i] = _en_US[i];
-                                Console.Clear();
-                            }
-                            break;
-                        case "2":
-                            for (int i = 0; i < _languageChooser.Length; i++)
-                            {
-                                _languageChooser[i] = _zh_CN[i];
-                                Console.Clear();
-                            }
-                            break;
-                        default:
-                            while (true)
-                            {
-                                _breaker = Breaker(_languageReceiver, args);
-                                if (_breaker == false)
+                        switch (_languageReceiver)
+                        {
+                            case "1":
+                                for (int i = 0; i < _languageChooser.Length; i++)
                                 {
-                                    Console.WriteLine("Inputted error, please try again/Chinese");
-                                    _languageReceiver = Console.ReadLine();
-                                    if (_languageReceiver == "1" || _languageReceiver == "2")
+                                    _languageChooser[i] = _en_US[i];
+                                    Console.Clear();
+                                }
+                                break;
+                            case "2":
+                                for (int i = 0; i < _languageChooser.Length; i++)
+                                {
+                                    _languageChooser[i] = _zh_CN[i];
+                                    Console.Clear();
+                                }
+                                break;
+                            default:
+                                while (true)
+                                {
+                                    _breaker = Breaker(_languageReceiver, args);
+                                    if (_breaker == false)
                                     {
-                                        _recTimer += 1;
-                                        Console.Clear();
-                                        Main(args);
+                                        Console.WriteLine("Inputted error, please try again/Chinese");
+                                        _languageReceiver = Console.ReadLine();
+                                        if (_languageReceiver == "1" || _languageReceiver == "2")
+                                        {
+                                            _recTimer += 1;
+                                            Console.Clear();
+                                            Main(args);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        break;
                                     }
                                 }
-                                else
-                                {
-                                    break;
-                                }
-                            }
-                            break;
+                                break;
+                        }
                     }
                     #endregion
                     #region Display Board
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine(@"
-■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+                    Console.WriteLine(@"■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ■                                                                           ■
 ■                                                                           ■
 ■                               {0}                               ■
@@ -180,12 +182,11 @@ namespace Grades_Calculator
 
 1. {0}
 2. {1}
-3. {2}
-
 ----------------------------------------------------------------------------
 ----------------------------------------------------------------------------
-", _languageChooser[6], _languageChooser[7], _languageChooser[8]);
+", _languageChooser[6], _languageChooser[7]);
                     _recTimer++;
+                    _languageController = false;
                     Console.ReadKey();
                     Console.Clear();
                     Main(args);
@@ -202,6 +203,7 @@ namespace Grades_Calculator
 ----------------------------------------------------------------------------
 ", _languageChooser[9], _languageChooser[10]);
                     _recTimer++;
+                    _languageController = false;
                     Console.ReadKey();
                     Console.Clear();
                     Main(args);
@@ -211,6 +213,7 @@ namespace Grades_Calculator
                     Breaker(disp, args);
                     _disTimer += 1;
                     _recTimer++;
+                    _languageController = false;
                     Console.Clear();
                     Main(args);
                     break;
@@ -291,6 +294,7 @@ namespace Grades_Calculator
                     case "Y":
                         _rec = true;
                         _languager = false;
+                        _languageController = false;
                         Main(args);
                         break;
                     case "n":
