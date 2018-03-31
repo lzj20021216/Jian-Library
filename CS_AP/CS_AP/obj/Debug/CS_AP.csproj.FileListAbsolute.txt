@@ -1,0 +1,7 @@
+C:\Users\Jian\source\repos\CS_AP\CS_AP\bin\Debug\CS_AP.exe.config
+C:\Users\Jian\source\repos\CS_AP\CS_AP\bin\Debug\CS_AP.exe
+C:\Users\Jian\source\repos\CS_AP\CS_AP\bin\Debug\CS_AP.pdb
+C:\Users\Jian\source\repos\CS_AP\CS_AP\obj\Debug\CS_AP.csprojResolveAssemblyReference.cache
+C:\Users\Jian\source\repos\CS_AP\CS_AP\obj\Debug\CS_AP.csproj.CoreCompileInputs.cache
+C:\Users\Jian\source\repos\CS_AP\CS_AP\obj\Debug\CS_AP.exe
+C:\Users\Jian\source\repos\CS_AP\CS_AP\obj\Debug\CS_AP.pdb

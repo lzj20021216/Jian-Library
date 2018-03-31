@@ -15,6 +15,7 @@ namespace Tester
         public static string[] _languageChooser = new string[28];
         public static string _displayBoard = null;
         public static string _colorChooser = null;
+        public static string _sNum = null;
         public static int _recTimer = 0;
         public static int _disTimer = 0;
         public static int _totalScore = 0;
@@ -35,28 +36,26 @@ namespace Tester
                 int[] inps = new int[10];
                 int temp = 0;
                 int number = 0;
-                string sNum = null;
-                #region Console Color
-                if (_tester)
-                {
-                    Console.WriteLine("Codes: ");
-                    _colorChooser = Console.ReadLine();
-                    sNum = "1";
-                    if (_colorChooser == null || _colorChooser != "Light" || _colorChooser != "light" || _colorChooser != "Dark" || _colorChooser != "dark")
-                    {
-                        _colorChooser = "dark";
-                    }
-                    ColorController(_colorChooser, sNum, args);
-                }
-                #endregion
                 #region Languager
                 if (_languager)
                 {
                     if (_recTimer == 0)
                     {
-
-                        sNum = "2";
-                        ColorController(_colorChooser, sNum, args);
+                        #region Console Color
+                        if (_tester)
+                        {
+                            Console.WriteLine("Codes: ");
+                            _colorChooser = Console.ReadLine();
+                            _sNum = "1";
+                            if (_colorChooser == null && _colorChooser != "Light" && _colorChooser != "light" && _colorChooser != "Dark" && _colorChooser != "dark")
+                            {
+                                _colorChooser = "dark";
+                            }
+                            ColorController(_colorChooser, _sNum, args);
+                        }
+                        #endregion
+                        _sNum = "2";
+                        ColorController(_colorChooser, _sNum, args);
                         Console.WriteLine("Choose your language");
                         _languageReceiver = Console.ReadLine();
                         Breaker(_languageReceiver, args);
@@ -104,8 +103,8 @@ namespace Tester
                     }
                     #endregion
                     #region Display Board
-                    sNum = "3";
-                    ColorController(_colorChooser, sNum, args);
+                    _sNum = "3";
+                    ColorController(_colorChooser, _sNum, args);
                     Console.WriteLine(@"■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 ■                                                                           ■
 ■                                                                           ■
@@ -129,8 +128,8 @@ namespace Tester
 ");
                     if (_disTimer == 0)
                     {
-                        sNum = "4";
-                        ColorController(_colorChooser, sNum, args);
+                        _sNum = "4";
+                        ColorController(_colorChooser, _sNum, args);
                         Console.Write(_languageChooser[27]);
                         _displayBoard = Console.ReadLine();
                         Features(_displayBoard, args);
@@ -139,8 +138,8 @@ namespace Tester
                     #region Calculator
                     while (_rec)
                     {
-                        sNum = "5";
-                        ColorController(_colorChooser, sNum, args);
+                        _sNum = "5";
+                        ColorController(_colorChooser, _sNum, args);
                         for (int i = 0; i < 10; i++)
                         {
                             temp = i;
@@ -198,13 +197,15 @@ namespace Tester
             switch (disp)
             {
                 case "1":
-                    //Color Controller goes here
+                    _sNum = "6";
+                    ColorController(_colorChooser, _sNum, args);
                     Console.WriteLine(@"
 ----------------------------------------------------------------------------
 ----------------------------------------------------------------------------
 
 1. {0}
 2. {1}
+
 ----------------------------------------------------------------------------
 ----------------------------------------------------------------------------
 ", _languageChooser[6], _languageChooser[7]);
@@ -317,14 +318,17 @@ namespace Tester
                     case "y":
                     case "Y":
                         _rec = true;
-                        _languager = false;
+                        _languager = true;
                         _languageController = false;
+                        _disTimer = 0;
+                        Console.Clear();
                         Main(args);
                         break;
                     case "n":
                     case "N":
                         Console.WriteLine(_languageChooser[10]);
-                        i = 3;
+                        permission = "exit";
+                        Breaker(permission, args);
                         break;
                     default:
                         if (Breaker(permission, args) == true)
@@ -342,6 +346,12 @@ namespace Tester
                 }
             }
         }
+        /// <summary>
+        /// A method of Colors Controller
+        /// </summary>
+        /// <param name="colorReceiver">The user's input</param>
+        /// <param name="cl">Collection</param>
+        /// <param name="args">An array form Main Method</param>
         public static void ColorController(string colorReceiver, string cl, string[] args)
         {
             switch (colorReceiver)
@@ -365,6 +375,9 @@ namespace Tester
                             break;
                         case "5":
                             Console.ForegroundColor = ConsoleColor.DarkYellow;
+                            break;
+                        case "6":
+                            Console.ForegroundColor = ConsoleColor.Magenta;
                             break;
 
                     }
@@ -390,7 +403,9 @@ namespace Tester
                         case "5":
                             Console.ForegroundColor = ConsoleColor.Yellow;
                             break;
-
+                        case "6":
+                            Console.ForegroundColor = ConsoleColor.Blue;
+                            break;
                     }
                     break;
             }

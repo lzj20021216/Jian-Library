@@ -41,3 +41,6 @@ C:\Users\lzjin\source\repos\Project_01\Project_01\obj\Debug\Project_01.applicati
 C:\Users\Jian\Documents\GitHub\Jian-Library\Project_01\Project_01\obj\Debug\Project_01.csprojResolveAssemblyReference.cache
 C:\Users\Jian\Documents\GitHub\Jian-Library\Project_01\Project_01\obj\Debug\Project_01.exe
 C:\Users\Jian\Documents\GitHub\Jian-Library\Project_01\Project_01\obj\Debug\Project_01.pdb
+C:\Users\Jian\Desktop\Project_01\Project_01\obj\Debug\Project_01.csprojResolveAssemblyReference.cache
+C:\Users\Jian\Desktop\Project_01\Project_01\obj\Debug\Project_01.exe
+C:\Users\Jian\Desktop\Project_01\Project_01\obj\Debug\Project_01.pdb
