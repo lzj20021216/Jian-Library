@@ -1,7 +1,0 @@
-C:\Users\Jian\source\repos\Features_Tester\Features_Tester\bin\Debug\Features_Tester.exe.config
-C:\Users\Jian\source\repos\Features_Tester\Features_Tester\bin\Debug\Features_Tester.exe
-C:\Users\Jian\source\repos\Features_Tester\Features_Tester\bin\Debug\Features_Tester.pdb
-C:\Users\Jian\source\repos\Features_Tester\Features_Tester\obj\Debug\Features_Tester.csproj.CoreCompileInputs.cache
-C:\Users\Jian\source\repos\Features_Tester\Features_Tester\obj\Debug\Features_Tester.exe
-C:\Users\Jian\source\repos\Features_Tester\Features_Tester\obj\Debug\Features_Tester.pdb
-C:\Users\Jian\source\repos\Features_Tester\Features_Tester\obj\Debug\Features_Tester.csprojResolveAssemblyReference.cache
