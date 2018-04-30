@@ -1,7 +1,0 @@
-c:\users\jian\source\repos\Tester\Tester\bin\Debug\Tester.exe.config
-c:\users\jian\source\repos\Tester\Tester\bin\Debug\Tester.exe
-c:\users\jian\source\repos\Tester\Tester\bin\Debug\Tester.pdb
-c:\users\jian\source\repos\Tester\Tester\obj\Debug\Tester.csproj.CoreCompileInputs.cache
-c:\users\jian\source\repos\Tester\Tester\obj\Debug\Tester.exe
-c:\users\jian\source\repos\Tester\Tester\obj\Debug\Tester.pdb
-c:\users\jian\source\repos\Tester\Tester\obj\Debug\Tester.csprojResolveAssemblyReference.cache

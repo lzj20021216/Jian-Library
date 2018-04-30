@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GC_For_78
+namespace Features_Tester
 {
     class Program
     {
         public static string _languageReceiver = null;
-        public static string[] _en_US = { "Maths: ", "Chinese: ", "English: ", "Politics: ", "History: ", "Chemistry: ", "Physics: ", "Biology: ", "Geography: ", "PE: ", "Press any key to exit . . .", "Inputted error, try again please!", "Your total marks:{0} \n\nYour last marks: ", "Congratulations!\nYou've got {0} more marks~", "It seems that there's no differences between the marks.\nKeep trying!", "Emm...Just keep trying and you'll be successful!", "Would you like to calculate others' scores?\t y/n", "GC_Calculator", "v2.1 beta", "Powered by Jian", "Welcome to send feedbacks", "if you find bugs or have some good ideas", "Feedback email: xxx@outlook.com      Thank you  ^_^", "1. What's new     2. How to use     3. exit", "New UI", "Lighter and more powerful", "Less bugs", "You can close the program by inputting 'exit' while using it.", "Just input one of the numbers above or leave blank to skip\nLearn about the features: " };
+        public static string[] _en_US = { "Maths: ", "Chinese: ", "English: ", "Politics: ", "History: ", "Chemistry: ", "Physics: ", "Biology: ", "Geography: ", "PE: ", "Press any key to exit . . .", "Inputted error, try again please!", "Your total marks:{0} \n\nYour last marks: ", "Congratulations!\nYou've got {0} more marks~", "It seems that there's no differences between the marks.\nKeep trying!", "Emm...Just keep trying and you'll be successful!", "Would you like to calculate others' scores?\t y/n", "GC_Calculator", "v2.1 beta", "Powered by Jian", "Welcome to send feedbacks", "if you find bugs or have some good ideas", "Feedback email: xxx@outlook.com      Thank you  ^_^", "1. What's new     2. How to use     3. exit", "New UI", "Lighter and more powerful", "Less bugs", "You can close the program by inputting 'exit' while using it.", "Just input one of the numbers above or leave blank to skip\nLearn about the features: ", };
         public static string[] _zh_CN = { "数学：", "语文：", "英语： ", "政治：", "历史：", "化学：", "物理", "生物：", "地理：", "体育：", "按下任意键退出 . . .", "输入有误，请重新输入！", "你的总分数：{0} \n\n上次的分数：", "太棒了！你比上次多得了{0}分", "继续保持！", "继续努力！", "你想计算其他人的成绩吗？", "     分数计算器", "\b 版本 2.1 测试副本", "       Jian 制作", "\b如果在使用本程序时遇到问题或有好的建议", "\t\t  欢迎随时反馈", "\t     反馈邮箱: xxxx@outlook.com      多谢 ^_^", "    1. 新增功能     2. 使用方法     3. 退出程序", "新的界面", "小体积，大功能", "修复bug", "在使用时，通过输入 \"exit\" 来退出程序", "输入以上数字序号之一，或者保留空白以跳过\n了解功能：" };
         public static string[] _languageChooser = new string[29];
         public static string[] _inpt = new string[10];
@@ -19,6 +19,7 @@ namespace GC_For_78
         public static int[] _inps = new int[10];
         public static int _recTimer = 0;
         public static int _disTimer = 0;
+        public static int _clearTimer = 0;
         public static int _totalScore = 0;
         public static int _difference = 0;
         public static int _temp = 0;
@@ -31,6 +32,7 @@ namespace GC_For_78
         public static bool _ex = true;
         public static bool _languageController = true;
         public static bool _tester = true;
+        public static bool _clearPermission = false;
         static void Main(string[] args)
         {
             if (_runner)
@@ -43,17 +45,8 @@ namespace GC_For_78
                         #region Console Color
                         if (_tester)
                         {
-                            Console.BackgroundColor = ConsoleColor.Blue;
-                            Console.Clear();
-                            Console.WriteLine(@"════════════════════════╗
-                                                ║
-    Change your theme:     /     改变您的主题   ║
-    1. Light(浅色)                              ║
-    2. Dark(深色)                               ║
-                                                ║");
-                            Console.WriteLine("════════════════════════╝");
-
-                            _colorChooser = Console.ReadLine();
+                            Console.WriteLine("Codes: ");
+                            _colorChooser = "Light";
                             _sNum = "1";
                             if (_colorChooser == null && _colorChooser != "Light" && _colorChooser != "light" && _colorChooser != "Dark" && _colorChooser != "dark")
                             {
@@ -64,8 +57,8 @@ namespace GC_For_78
                         #endregion
                         _sNum = "2";
                         ColorController(_colorChooser, _sNum, args);
-                        Console.WriteLine("Choose your language(请选择您的语言)\n1. English\n2. 中文（简体）");
-                        _languageReceiver = Console.ReadLine();
+                        Console.WriteLine("Choose your language");
+                        _languageReceiver = "1";
                         Breaker(_languageReceiver, args);
                     }
                     if (_languageController)
@@ -138,7 +131,7 @@ namespace GC_For_78
                         _sNum = "4";
                         ColorController(_colorChooser, _sNum, args);
                         Console.Write(_languageChooser[28]);
-                        _displayBoard = Console.ReadLine();
+                        _displayBoard = "";
                         Features(_displayBoard, args);
                     }
                     #endregion
@@ -234,6 +227,7 @@ namespace GC_For_78
                     bool a = int.TryParse(_inpt[i], out _number);
                     if (a == false)
                     {
+                        ++_clearTimer;
                         if (Breaker(_inpt[i], args))
                         {
                             _rec = false;
@@ -248,6 +242,11 @@ namespace GC_For_78
                     }
                     else
                     {
+                        if (_clearTimer != 0)
+                        {
+                            Console.Clear();
+                            Calculator_DisplayBoard(args);
+                        }
                         _inps[_temp] = int.Parse(_inpt[_temp]);
                         if (_temp == 9)
                         {
@@ -371,7 +370,6 @@ namespace GC_For_78
             {
                 case "Light":
                 case "light":
-                case "1":
                     switch (cl)
                     {
                         case "1":
@@ -398,7 +396,6 @@ namespace GC_For_78
                     break;
                 case "Dark":
                 case "dark":
-                case "2":
                 default:
                     switch (cl)
                     {

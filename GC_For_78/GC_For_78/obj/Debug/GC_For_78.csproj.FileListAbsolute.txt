@@ -1,0 +1,7 @@
+C:\Users\Jian\source\repos\GC_For_78\GC_For_78\bin\Debug\GC_For_78.exe.config
+C:\Users\Jian\source\repos\GC_For_78\GC_For_78\bin\Debug\GC_For_78.exe
+C:\Users\Jian\source\repos\GC_For_78\GC_For_78\bin\Debug\GC_For_78.pdb
+C:\Users\Jian\source\repos\GC_For_78\GC_For_78\obj\Debug\GC_For_78.csprojResolveAssemblyReference.cache
+C:\Users\Jian\source\repos\GC_For_78\GC_For_78\obj\Debug\GC_For_78.csproj.CoreCompileInputs.cache
+C:\Users\Jian\source\repos\GC_For_78\GC_For_78\obj\Debug\GC_For_78.exe
+C:\Users\Jian\source\repos\GC_For_78\GC_For_78\obj\Debug\GC_For_78.pdb
