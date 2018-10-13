@@ -1,0 +1,6 @@
+c:\users\lzjin\documents\visual studio 2015\Projects\Marks_Plus_Plus\Marks_Plus_Plus\bin\Debug\Marks_Plus_Plus.exe.config
+c:\users\lzjin\documents\visual studio 2015\Projects\Marks_Plus_Plus\Marks_Plus_Plus\bin\Debug\Marks_Plus_Plus.exe
+c:\users\lzjin\documents\visual studio 2015\Projects\Marks_Plus_Plus\Marks_Plus_Plus\bin\Debug\Marks_Plus_Plus.pdb
+c:\users\lzjin\documents\visual studio 2015\Projects\Marks_Plus_Plus\Marks_Plus_Plus\obj\Debug\Marks_Plus_Plus.csprojResolveAssemblyReference.cache
+c:\users\lzjin\documents\visual studio 2015\Projects\Marks_Plus_Plus\Marks_Plus_Plus\obj\Debug\Marks_Plus_Plus.exe
+c:\users\lzjin\documents\visual studio 2015\Projects\Marks_Plus_Plus\Marks_Plus_Plus\obj\Debug\Marks_Plus_Plus.pdb
