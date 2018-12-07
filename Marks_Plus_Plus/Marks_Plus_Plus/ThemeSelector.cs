@@ -42,7 +42,7 @@ namespace Marks_Plus_Plus
                         Dark();
                         break;
                     default:
-                        Dark();
+                        Light();
                         break;
                 }
                 _choice = value;

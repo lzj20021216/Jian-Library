@@ -13,7 +13,7 @@ namespace Marks_Plus_Plus
         {
             this.Choices = choices;
         }
-        private string[] _displayLanguagePack = new string[30];
+        private string[] _displayLanguagePack = new string[34];
         public string[] DisplayLanguagePack
         {
             get { return _displayLanguagePack; }
@@ -44,6 +44,7 @@ namespace Marks_Plus_Plus
                         break;
                     //etc
                     default:
+                        _en_US();
                         break;
                 }
                 _choices = value;
@@ -85,7 +86,11 @@ namespace Marks_Plus_Plus
                 "Less bugs", //26
                 "You can close the program by inputting 'exit' while using it.", //27
                 "Just input one of the numbers above or leave blank to skip\nLearn about the features: ", //28
-                "-----------------------------------------------------------------------------------" //29
+                "-----------------------------------------------------------------------------------", //29
+                "Lighter and more powerful", //30
+                "Less bugs", //31
+                "You can close the program by inputting 'exit' while using it.", //32
+                "Just input one of the numbers above or leave blank to skip\nLearn about the features: " //33
             };
             return DisplayLanguagePack = _en_US;
         }
@@ -124,7 +129,11 @@ namespace Marks_Plus_Plus
                 "修复bug",
                 "在使用时，通过输入 \"exit\" 来退出程序",
                 "输入以上数字序号之一，或者保留空白以跳过\n了解功能：",
-                "--------------------------------------------------------------"
+                "--------------------------------------------------------------",
+                "新的界面", "小体积，大功能",
+                "修复bug",
+                "在使用时，通过输入 \"exit\" 来退出程序",
+                "输入以上数字序号之一，或者保留空白以跳过\n了解功能："
             };
             return DisplayLanguagePack = _zh_CN;
         }
