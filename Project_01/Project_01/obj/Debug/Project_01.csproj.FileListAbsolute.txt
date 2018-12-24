@@ -1,46 +1,7 @@
 C:\Users\lzjin\source\repos\Project_01\Project_01\bin\Debug\Project_01.exe.config
 C:\Users\lzjin\source\repos\Project_01\Project_01\bin\Debug\Project_01.exe
 C:\Users\lzjin\source\repos\Project_01\Project_01\bin\Debug\Project_01.pdb
-C:\Users\lzjin\source\repos\Project_01\Project_01\obj\Debug\Project_01.csprojResolveAssemblyReference.cache
+C:\Users\lzjin\source\repos\Project_01\Project_01\obj\Debug\Project_01.csprojAssemblyReference.cache
 C:\Users\lzjin\source\repos\Project_01\Project_01\obj\Debug\Project_01.csproj.CoreCompileInputs.cache
 C:\Users\lzjin\source\repos\Project_01\Project_01\obj\Debug\Project_01.exe
 C:\Users\lzjin\source\repos\Project_01\Project_01\obj\Debug\Project_01.pdb
-C:\Users\Everett Lee\source\repos\Project_01\Project_01\bin\Debug\Project_01.exe.config
-C:\Users\Everett Lee\source\repos\Project_01\Project_01\bin\Debug\Project_01.exe
-C:\Users\Everett Lee\source\repos\Project_01\Project_01\bin\Debug\Project_01.pdb
-C:\Users\Everett Lee\source\repos\Project_01\Project_01\obj\Debug\Project_01.csprojResolveAssemblyReference.cache
-C:\Users\Everett Lee\source\repos\Project_01\Project_01\obj\Debug\Project_01.csproj.CoreCompileInputs.cache
-C:\Users\Everett Lee\source\repos\Project_01\Project_01\obj\Debug\Project_01.exe
-C:\Users\Everett Lee\source\repos\Project_01\Project_01\obj\Debug\Project_01.pdb
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.exe.config
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.exe
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.pdb
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.csprojResolveAssemblyReference.cache
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.csproj.CoreCompileInputs.cache
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.exe
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.pdb
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.exe.manifest
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.application
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.exe.manifest
-C:\Users\lzjin\OneDrive\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.application
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.exe.config
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.exe.manifest
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.application
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.exe
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\bin\Debug\Project_01.pdb
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.csprojResolveAssemblyReference.cache
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.csproj.CoreCompileInputs.cache
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.exe.manifest
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.application
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.exe
-C:\Users\lzjin\Desktop\Great.GC New\Project_01\Project_01\obj\Debug\Project_01.pdb
-C:\Users\lzjin\source\repos\Project_01\Project_01\bin\Debug\Project_01.exe.manifest
-C:\Users\lzjin\source\repos\Project_01\Project_01\bin\Debug\Project_01.application
-C:\Users\lzjin\source\repos\Project_01\Project_01\obj\Debug\Project_01.exe.manifest
-C:\Users\lzjin\source\repos\Project_01\Project_01\obj\Debug\Project_01.application
-C:\Users\Jian\Documents\GitHub\Jian-Library\Project_01\Project_01\obj\Debug\Project_01.csprojResolveAssemblyReference.cache
-C:\Users\Jian\Documents\GitHub\Jian-Library\Project_01\Project_01\obj\Debug\Project_01.exe
-C:\Users\Jian\Documents\GitHub\Jian-Library\Project_01\Project_01\obj\Debug\Project_01.pdb
-C:\Users\Jian\Desktop\Project_01\Project_01\obj\Debug\Project_01.csprojResolveAssemblyReference.cache
-C:\Users\Jian\Desktop\Project_01\Project_01\obj\Debug\Project_01.exe
-C:\Users\Jian\Desktop\Project_01\Project_01\obj\Debug\Project_01.pdb

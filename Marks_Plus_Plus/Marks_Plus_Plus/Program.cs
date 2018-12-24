@@ -9,17 +9,19 @@ namespace Marks_Plus_Plus
 {
     public class Program
     {
-        public static string[] _dpLpk = new string[30];
         public static ConsoleColor[] _theme = new ConsoleColor[6];
+        public static string[] _dpLpk = new string[30];
         public static string[] _usersInputs = new string[14];
         public static string[] _emptyValues = new string[2];
         public static bool _recController = true;
         public static bool _firstUse = true;
         public static int _disShow = 0;
         public static int _recTimer = 0;
+        public static int _disTimer = 0;
+        public static int _infoTimer = 0;
         static void Main(string[] args)
         {
-            while (_recController)
+            if (_recController)
             {
                 if (_recTimer == 0)
                 {
@@ -42,7 +44,6 @@ namespace Marks_Plus_Plus
                 UserInterface(args);
             }
             //Console.WriteLine(Tips);
-            Console.ReadKey();
         }
         /// <summary>
         /// A method of showing the features of the program
@@ -50,12 +51,22 @@ namespace Marks_Plus_Plus
         public static void UserInterface(string[] args)
         {
             Console.ForegroundColor = _theme[2];
-            Console.WriteLine("{0}\n\n{1}\n\n{2}\n\n{3}\n\n{4}\n\n{5}\n\n{6}\n\n{7}\n\n{8}", _dpLpk[29], _dpLpk[17], _dpLpk[18], _dpLpk[19], _dpLpk[20], _dpLpk[21], _dpLpk[22], _dpLpk[23], _dpLpk[29]);
-            Console.ForegroundColor = _theme[3];
-            Console.Write(_dpLpk[28]);
-            _usersInputs[2] = Console.ReadLine();
+            Console.WriteLine("{0}\n\n{1}\n\n{2}\n\n{3}\n\n{4}\n\n{5}\n\n{6}", _dpLpk[29], _dpLpk[17], _dpLpk[18], _dpLpk[19], _dpLpk[20], _dpLpk[21], _dpLpk[22]);
+            if (_disTimer == 0)
+            {
+                Console.WriteLine("\n{0}\n\n{1}", _dpLpk[23], _dpLpk[29]);
+            }
+            else
+            {
+                Console.WriteLine("\n{0}", _dpLpk[29]);
+            }
+            if (_disTimer == 0)
+            {
+                Console.ForegroundColor = _theme[3];
+                Console.Write(_dpLpk[28]);
+                _usersInputs[2] = Console.ReadLine();
+            }
             FeaturesShow(args);
-            Console.ReadKey();
         }
         /// <summary>
         /// A method to show the features and tip of the application
@@ -77,6 +88,14 @@ namespace Marks_Plus_Plus
                 case "3":
                     break;
                 default:
+                    Console.Clear();
+                    if (_recTimer == 0)
+                    {
+                        _recTimer++;
+                        _disTimer++;
+                        _usersInputs[2] = "";
+                        UserInterface(args);
+                    }
                     break;
             }
             if (_disShow > 0 && _disShow < 3)
@@ -95,9 +114,33 @@ namespace Marks_Plus_Plus
                 Console.ReadKey();
                 _disShow = 0;
             }
-            _recTimer++;
-            Console.Clear();
-            Main(args);
+            if (_disTimer == 0)
+            {
+                _recTimer++;
+                Console.Clear();
+                Main(args);
+            }
+            else
+            {
+                _usersInputs[2] = "10";
+                InformationCollector(args);
+            }
+        }
+        public static void InformationCollector(string[] args)
+        {
+            int temp = 2;
+            if (_infoTimer == 0)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    _infoTimer = i;
+                    Console.WriteLine(_dpLpk[i]);
+                    _usersInputs[temp + i] = Console.ReadLine();
+                    if (int.TryParse(_usersInputs[temp + i], out int number) == false)
+                    {
+                    }
+                }
+            }
         }
     }
 }
