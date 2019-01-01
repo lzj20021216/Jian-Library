@@ -71,6 +71,10 @@ namespace Project_Word_Master
             "     4. Exit", //8
             "Just input one of the numbers above or leave blank to skip\nLearn about the features: ", //9
             "-----------------------------------------------------------------------------------------------------------------------", //10
+            "You must login to use this application", //11
+            "Input \"exit\" to quit this application", //12
+            "Developed by Everett Lee(lzj20021216)", //13
+            "Feedback e-mail: lzj20021216@outlook.com", //14
             };
             return DisplayLanguagePack = _en_US;
         }

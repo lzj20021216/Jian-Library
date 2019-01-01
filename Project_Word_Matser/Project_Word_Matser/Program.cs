@@ -21,6 +21,7 @@ namespace Project_Word_Master
         {
             if (_recPermission == true)
             {
+                Console.Title = "Word Master";
                 Console.WriteLine("Choose your language:\n1. English\n2. Chinese (Simplified)");
                 _userInputs[0] = Console.ReadLine();
                 LanguagePacks lpks = new LanguagePacks(_userInputs[0]);
@@ -48,21 +49,22 @@ namespace Project_Word_Master
             switch (_userInputs[1])
             {
                 case "1":
+                    _showPermission = false;
                     break;
                 case "2":
-                    _displayBoardShow[0] = null;
-                    _displayBoardShow[1] = null;
+                    _displayBoardShow[0] = _dpLpk[11];
+                    _displayBoardShow[1] = _dpLpk[12];
                     break;
                 case "3":
-                    _displayBoardShow[0] = null;
-                    _displayBoardShow[1] = null;
+                    _displayBoardShow[0] = _dpLpk[13];
+                    _displayBoardShow[1] = _dpLpk[14];
                     break;
                 default:
                     break;
             }
             if (_showPermission)
             {
-                Console.WriteLine(_dpLpk[10] + "\n\n" + "{0}" + "\n\n\n" + "{1}" + "\n\n" + _dpLpk[10]);
+                Console.WriteLine("\n" + _dpLpk[10] + "\n\n\n" + _displayBoardShow[0] + "\n\n\n" + _displayBoardShow[1] + "\n\n\n" + _dpLpk[10] + "\n");
             }
         }
     }
