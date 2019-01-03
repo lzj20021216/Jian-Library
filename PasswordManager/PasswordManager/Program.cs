@@ -20,13 +20,22 @@ namespace PasswordManager
         static void Main(string[] args)
         {
             Console.Title = "Passport Manager";
-            Console.Write("Input the key\n(Leave blank if you don't have one):");
+            Console.Write("Input the key\n(Leave blank if you don't have one): ");
             _userInp = Console.ReadLine();
             PassportKeyValue pkv = new PassportKeyValue(_permission, _userInp);
-            _permission = pkv.Checker();
+            _permission = pkv.ProgramChecker();
             Console.Clear();
             if (_permission == true)
             {
+                Console.Clear();
+                Console.Write("Input the key\n(Leave blank if you don't have one): ");
+                for (int i = 0; i < _userInp.Length; i++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+                Console.ReadKey();
+                Console.Clear();
                 RandomUserName un = new RandomUserName(_unnums, _unchara, _uneNum);
                 string username = un.UserNameMaker();
                 PasswordCalculator pwd = new PasswordCalculator(_pwdnums, _pwdchara, _pwdeNum);

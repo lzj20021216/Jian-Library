@@ -26,7 +26,7 @@ namespace PasswordManager
             get { return _passportKey; }
             set { _passportKey = value; }
         }
-        public bool Checker()
+        public bool ProgramChecker()
         {
             if (PassportKey == "lzj021216@%")
             {
