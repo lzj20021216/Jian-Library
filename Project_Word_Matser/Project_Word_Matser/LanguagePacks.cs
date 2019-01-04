@@ -75,6 +75,11 @@ namespace Project_Word_Master
             "Input \"exit\" to quit this application", //12
             "Developed by Everett Lee(lzj20021216)", //13
             "Feedback e-mail: lzj20021216@outlook.com", //14
+            "Input the key\n(Leave blank if you don't have one): ", //15
+            "User Name: ", //16
+            "Password: ", //17
+            "Press any key to exit . . .", //18
+            "Login failture!", //19
             };
             return DisplayLanguagePack = _en_US;
         }

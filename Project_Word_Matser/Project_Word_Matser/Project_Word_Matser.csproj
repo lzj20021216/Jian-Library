@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="ApplicationPassport.cs" />
     <Compile Include="LanguagePacks.cs" />
+    <Compile Include="PassportChecker.cs" />
+    <Compile Include="PasswordChecker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemePacks.cs" />

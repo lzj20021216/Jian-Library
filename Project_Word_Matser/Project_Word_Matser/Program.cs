@@ -32,6 +32,10 @@ namespace Project_Word_Master
                 Console.Clear();
                 UserInterface();
             }
+            else
+            {
+                Console.WriteLine(_dpLpk[18]);
+            }
             Console.ReadKey(true);
         }
         /// <summary>
@@ -50,6 +54,7 @@ namespace Project_Word_Master
             {
                 case "1":
                     _showPermission = false;
+                    LoginModel();
                     break;
                 case "2":
                     _displayBoardShow[0] = _dpLpk[11];
@@ -66,6 +71,30 @@ namespace Project_Word_Master
             {
                 Console.WriteLine("\n" + _dpLpk[10] + "\n\n\n" + _displayBoardShow[0] + "\n\n\n" + _displayBoardShow[1] + "\n\n\n" + _dpLpk[10] + "\n");
             }
+        }
+        public static void LoginModel()
+        {
+            Console.WriteLine(_dpLpk[15]);
+            _userInputs[3] = Console.ReadLine();
+            PassportChecker ps = new PassportChecker(_userInputs[3]);
+            bool temp = ps.Result();
+            if (temp == false)
+            {
+                Console.WriteLine(_dpLpk[19]);
+                return;
+            }
+            Console.WriteLine(_dpLpk[16]);
+            _userInputs[4] = Console.ReadLine();
+            Console.WriteLine(_dpLpk[17]);
+            _userInputs[5] = Console.ReadLine();
+            PasswordChecker pwdChecker = new PasswordChecker(_userInputs[4], _userInputs[5]);
+            temp = pwdChecker.Result();
+            if (temp == false)
+            {
+                Console.WriteLine(_dpLpk[19]);
+                return;
+            }
+
         }
     }
 }
