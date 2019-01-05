@@ -39,7 +39,7 @@ namespace Project_Word_Master
                 {
                     _temp += uni1[i];
                 }
-                if (_temp > 34 && _temp < 70)
+                if (_temp >= 34 && _temp <= 70)
                 {
                     if (value.Contains("l"))
                     {
@@ -74,7 +74,7 @@ namespace Project_Word_Master
                 {
                     _temp += uni1[i];
                 }
-                if (_temp > 34 && _temp < 70)
+                if (_temp >= 34 && _temp <= 70)
                 {
                     if (value.Contains("E") && value.Contains("L"))
                     {

@@ -36,11 +36,16 @@ namespace PasswordManager
                 Console.WriteLine();
                 Console.ReadKey();
                 Console.Clear();
-                RandomUserName un = new RandomUserName(_unnums, _unchara, _uneNum);
-                string username = un.UserNameMaker();
-                PasswordCalculator pwd = new PasswordCalculator(_pwdnums, _pwdchara, _pwdeNum);
-                string password = pwd.PasswordMaker();
-                Console.WriteLine("User Name: {0}\nPassword: {1}", username, password);
+                while (true)
+                {
+                    RandomUserName un = new RandomUserName(_unnums, _unchara, _uneNum);
+                    string username = un.UserNameMaker();
+                    PasswordCalculator pwd = new PasswordCalculator(_pwdnums, _pwdchara, _pwdeNum);
+                    string password = pwd.PasswordMaker();
+                    Console.WriteLine("User Name: {0}\nPassword: {1}", username, password);
+                    Console.ReadKey();
+                    Console.WriteLine();
+                }
             }
             else
             {
