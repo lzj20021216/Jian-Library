@@ -87,6 +87,9 @@ namespace Project_Word_Master
 3. C     7. G     11. K     15. O     19. S     23. W     27. All (In alphabetical order)
 4. D     8. H     12. L     16. P     20. T     24. X", //21
             "Begin an exam by inputting one of the numbers above(All if blank): ",//22
+            @"
+1. Dictionary Mode   2. Mode A   3. Mode B  
+Choose a mode: ", //23
             };
             return DisplayLanguagePack = _en_US;
         }

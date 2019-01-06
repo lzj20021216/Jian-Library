@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PasswordManager")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Password Manager")]
+[assembly: AssemblyDescription("An Application that works with Word Master")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PasswordManager")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyProduct("Password Manager")]
+[assembly: AssemblyCopyright("Copyright ©  2018 Azure Blue Studio")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

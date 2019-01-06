@@ -67,7 +67,19 @@ namespace Project_Word_Master
             else
             {
                 Console.WriteLine(_dpLpk[0] + "\n\n" + _dpLpk[1] + "\n\n\n" + "\t\t\t\t\t" + _dpLpk[2] + "\n\n" + "\t\t\t\t\t\t" + _dpLpk[3] + "\n\n" + "\t\t\t\t" + _dpLpk[4] + "\n" + "\n\n" + _dpLpk[0]);
-                WordMaster(args);
+                Console.Write(_dpLpk[23]);
+                _userInputs[7] = Console.ReadLine();
+                switch (_userInputs[7])
+                {
+                    case "1":
+                        WordMasterMode1(args);
+                        break;
+                    case "2":
+                        break;
+                    case "3":
+                        break;
+                }
+                
             }
         }
         /// <summary>
@@ -140,7 +152,7 @@ namespace Project_Word_Master
         /// <summary>
         /// The core feature of this application
         /// </summary>
-        public static void WordMaster(string[] args)
+        public static void WordMasterMode1(string[] args)
         {
             Console.WriteLine("\n"+"Word List");
             Console.WriteLine(_dpLpk[20]);
@@ -203,6 +215,8 @@ namespace Project_Word_Master
                 case "26":
                     break;
                 case "27":
+                    break;
+                default:
                     break;
             }
         }
