@@ -124,7 +124,7 @@ namespace Project_Word_Master
         {
             Console.WriteLine(_dpLpk[15]);
             _userInputs[3] = Console.ReadLine();
-            PassportChecker ps = new PassportChecker(_userInputs[3]);
+           
             bool temp = ps.Result();
             if (temp == false)
             {

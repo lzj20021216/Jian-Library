@@ -1,0 +1,7 @@
+C:\Users\Everett Lee\source\repos\Ultimate_ToolBox\Ultimate_ToolBox\obj\Debug\Ultimate_ToolBox.csprojAssemblyReference.cache
+C:\Users\Everett Lee\source\repos\Ultimate_ToolBox\Ultimate_ToolBox\obj\Debug\Ultimate_ToolBox.csproj.CoreCompileInputs.cache
+C:\Users\Everett Lee\source\repos\Ultimate_ToolBox\Ultimate_ToolBox\bin\Debug\Ultimate_ToolBox.exe.config
+C:\Users\Everett Lee\source\repos\Ultimate_ToolBox\Ultimate_ToolBox\bin\Debug\Ultimate_ToolBox.exe
+C:\Users\Everett Lee\source\repos\Ultimate_ToolBox\Ultimate_ToolBox\bin\Debug\Ultimate_ToolBox.pdb
+C:\Users\Everett Lee\source\repos\Ultimate_ToolBox\Ultimate_ToolBox\obj\Debug\Ultimate_ToolBox.exe
+C:\Users\Everett Lee\source\repos\Ultimate_ToolBox\Ultimate_ToolBox\obj\Debug\Ultimate_ToolBox.pdb

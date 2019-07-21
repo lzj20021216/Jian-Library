@@ -5,3 +5,10 @@ C:\Users\lzjin\source\repos\Project_Word_Matser\Project_Word_Matser\obj\Debug\Pr
 C:\Users\lzjin\source\repos\Project_Word_Matser\Project_Word_Matser\obj\Debug\Project_Word_Matser.exe
 C:\Users\lzjin\source\repos\Project_Word_Matser\Project_Word_Matser\obj\Debug\Project_Word_Matser.pdb
 C:\Users\lzjin\source\repos\Project_Word_Matser\Project_Word_Matser\obj\Debug\Project_Word_Matser.csprojAssemblyReference.cache
+C:\Users\Everett Lee\Documents\GitHub\Jian-Library\Project_Word_Matser\Project_Word_Matser\bin\Debug\Project_Word_Matser.exe.config
+C:\Users\Everett Lee\Documents\GitHub\Jian-Library\Project_Word_Matser\Project_Word_Matser\bin\Debug\Project_Word_Matser.exe
+C:\Users\Everett Lee\Documents\GitHub\Jian-Library\Project_Word_Matser\Project_Word_Matser\bin\Debug\Project_Word_Matser.pdb
+C:\Users\Everett Lee\Documents\GitHub\Jian-Library\Project_Word_Matser\Project_Word_Matser\obj\Debug\Project_Word_Matser.csprojAssemblyReference.cache
+C:\Users\Everett Lee\Documents\GitHub\Jian-Library\Project_Word_Matser\Project_Word_Matser\obj\Debug\Project_Word_Matser.csproj.CoreCompileInputs.cache
+C:\Users\Everett Lee\Documents\GitHub\Jian-Library\Project_Word_Matser\Project_Word_Matser\obj\Debug\Project_Word_Matser.exe
+C:\Users\Everett Lee\Documents\GitHub\Jian-Library\Project_Word_Matser\Project_Word_Matser\obj\Debug\Project_Word_Matser.pdb
