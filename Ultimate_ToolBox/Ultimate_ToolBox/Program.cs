@@ -18,15 +18,21 @@ namespace Ultimate_ToolBox
         public static bool _showPermissionTwo = true;
         public static bool _showPermissionThree = true;
         public static bool _showPermissionFour = true;
+        public static bool _WindowAdaptor = true;
         public static string[] _protectionCase = { "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*" };
+        public static int _recTimeController = 0;
         static void Main(string[] args)
         {
             if (_recPermission == true)
             {
                 Console.Clear();
+                if (_recTimeController == 0)
+                {
+                    //    _WindowAdaptor = ApplicationWindowsShellAdaptor(args, "", Console.WindowWidth, Console.WindowHeight);
+                }
                 Console.Title = "Ultimate Toolbox By lzj20021216";
                 Console.WriteLine("Choose your language:\n1. English\n2. Chinese (Simplified)");
-                _userInputs[0] = Console.ReadLine();
+                _userInputs[0] = null;
                 LanguagePacks lpks = new LanguagePacks(_userInputs[0]);
                 _dpLpk = lpks.DisplayLpk();
                 Console.Clear();
@@ -43,33 +49,64 @@ namespace Ultimate_ToolBox
         /// </summary>
         public static void UserInterface(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(_dpLpk[0]);
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("\n\n" + _dpLpk[1]);
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.Write("\n\n" + _dpLpk[2]);
-            Console.Write("\n\n" + _dpLpk[3]);
-            Console.Write("\n\n" + _dpLpk[4]);
-            Console.ForegroundColor = ConsoleColor.White;
-            if (_showPermissionFour == true)
+            if (_WindowAdaptor == false)
             {
-                Console.Write("\n\n" + _dpLpk[5]);
-                Console.Write("\t" + _dpLpk[6]);
-                Console.Write("\t" + _dpLpk[7]);
-                Console.Write("\t" + _dpLpk[8]);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write(_dpLpk[0]);
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.Write("\n\n" + _dpLpk[1]);
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("\n\n" + _dpLpk[2]);
+                Console.Write("\n\n" + _dpLpk[3]);
+                Console.Write("\n\n" + _dpLpk[4]);
+                Console.ForegroundColor = ConsoleColor.White;
+                if (_showPermissionFour == true)
+                {
+                    Console.Write("\n\n" + _dpLpk[5]);
+                    Console.Write("\t" + _dpLpk[6]);
+                    Console.Write("\t" + _dpLpk[7]);
+                    Console.Write("\t" + _dpLpk[8]);
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.Write("                   " + _dpLpk[26] + "     ");
+                    Console.Write(_dpLpk[27] + "     ");
+                    Console.Write(_dpLpk[28] + "     ");
+                    Console.Write(_dpLpk[29]);
+                }
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.Write("                   " + _dpLpk[26] + "     ");
-                Console.Write(_dpLpk[27] + "     ");
-                Console.Write(_dpLpk[28] + "     ");
-                Console.Write(_dpLpk[29]);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write(_dpLpk[31]);
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.Write("\n\n\n\n" + _dpLpk[32]);
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("\n\n\n" + _dpLpk[2]);
+                Console.Write("\n\n\n" + _dpLpk[3]);
+                Console.Write("\n\n\n" + _dpLpk[4]);
+                Console.ForegroundColor = ConsoleColor.White;
+                if (_showPermissionFour == true)
+                {
+                    Console.Write("\n\n\n" + _dpLpk[5]);
+                    Console.Write("\t" + _dpLpk[6]);
+                    Console.Write("\t" + _dpLpk[7]);
+                    Console.Write("\t" + _dpLpk[8]);
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.Write("                   " + _dpLpk[26] + "     ");
+                    Console.Write(_dpLpk[27] + "     ");
+                    Console.Write(_dpLpk[28] + "     ");
+                    Console.Write(_dpLpk[29]);
+                }
             }
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("\n\n\n" + _dpLpk[0]);
+            Console.Write("\n\n\n\n\n" + _dpLpk[31]);
             Console.WriteLine("\n");
             Console.ForegroundColor = ConsoleColor.Red;
             if (_showPermissionTwo == true && _showPermissionThree == true)
@@ -160,7 +197,7 @@ namespace Ultimate_ToolBox
                 case "2":
                     WordMasterLauncher(args);
                     break;
-                    case "3":
+                case "3":
                     RandomNumbersCreatorLauncher(args);
                     break;
                 case "4":
@@ -246,13 +283,39 @@ namespace Ultimate_ToolBox
         }
         public static void WordMasterLauncher(string[] args)
         {
-            
+
         }
         public static void RandomNumbersCreatorLauncher(string[] args)
         {
             RMCreator rm = new RMCreator();
             Console.Clear();
             rm.Indoor(args);
+        }
+        public static bool ApplicationWindowsShellAdaptor(string[] args, string WindowResetCommand, int Width, int Height)
+        {
+            //Full Screen --> Width:197 Height:58
+            //Normal Screen --> Width: 120 Height: 30
+            //WindowResetCommand = "";
+            //Width = 0;
+            //Height = 0;
+            if (_recTimeController == 0)
+            {
+                //Full Screen Mode
+                if (Width == 197 && Height == 58)
+                {
+                    _recTimeController++;
+                    return true;
+                }
+            }
+            //In-application Checker
+            if (WindowResetCommand.Contains("reset window") || WindowResetCommand.Contains("rewind"))
+            {
+                if (Width == 197 && Height == 58)
+                {
+
+                }
+            }
+            return false;//Normal Screen Mode
         }
     }
 }

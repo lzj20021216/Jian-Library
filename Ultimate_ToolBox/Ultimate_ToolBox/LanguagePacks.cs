@@ -92,6 +92,12 @@ Choose a mode: ", //25
             "3. Random Numbers Creator", //28
             "4. Exit", //29
             "You can now close the application", //30
+            "■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ", //31
+            @"
+                                                                           0     0     0           0 0 0 0        KIT  
+                                                                           0     0     0             0 0         0   0 
+                                                                           0     0     0             0 0           0     
+                                                                             000       0 0 0 0       0 0         0   0", //32
             };
             return DisplayLanguagePack = _en_US;
         }
