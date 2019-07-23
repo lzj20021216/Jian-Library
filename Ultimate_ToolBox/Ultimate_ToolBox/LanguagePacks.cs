@@ -98,6 +98,13 @@ Choose a mode: ", //25
                                                                            0     0     0             0 0         0   0 
                                                                            0     0     0             0 0           0     
                                                                              000       0 0 0 0       0 0         0   0", //32
+            "                                                                                          Ultimate Toolbox", //33
+            "                                                                                     Developed by lzj20021216", //34
+            "                                                                    For testing purpose only.build.csapplicationPJ_UltBoxlzj05 ", //35
+            "                                                               1. Login", //36
+            "2. How-to", //37
+            "3. About the developer", //38
+            "4. Exit", //39
             };
             return DisplayLanguagePack = _en_US;
         }

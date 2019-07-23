@@ -18,7 +18,7 @@ namespace Ultimate_ToolBox
         public static bool _showPermissionTwo = true;
         public static bool _showPermissionThree = true;
         public static bool _showPermissionFour = true;
-        public static bool _WindowAdaptor = true;
+        public static bool _WindowAdaptor = false;
         public static string[] _protectionCase = { "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*" };
         public static int _recTimeController = 0;
         static void Main(string[] args)
@@ -28,7 +28,8 @@ namespace Ultimate_ToolBox
                 Console.Clear();
                 if (_recTimeController == 0)
                 {
-                    //    _WindowAdaptor = ApplicationWindowsShellAdaptor(args, "", Console.WindowWidth, Console.WindowHeight);
+                    _WindowAdaptor = ApplicationWindowsShellAdaptor(args, "", Console.WindowWidth, Console.WindowHeight);
+                    _recTimeController++;
                 }
                 Console.Title = "Ultimate Toolbox By lzj20021216";
                 Console.WriteLine("Choose your language:\n1. English\n2. Chinese (Simplified)");
@@ -47,6 +48,7 @@ namespace Ultimate_ToolBox
         /// <summary>
         /// A method to show the user's interface
         /// </summary>
+        /// <param name="args">A 'string[]' type array to support Main method</param>
         public static void UserInterface(string[] args)
         {
             if (_WindowAdaptor == false)
@@ -76,43 +78,47 @@ namespace Ultimate_ToolBox
                     Console.Write(_dpLpk[28] + "     ");
                     Console.Write(_dpLpk[29]);
                 }
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\n" + _dpLpk[0]);
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write(_dpLpk[31]);
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("\n\n\n\n" + _dpLpk[32]);
+                Console.Write("\n\n\n" + _dpLpk[32]);
                 Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.Write("\n\n\n" + _dpLpk[2]);
-                Console.Write("\n\n\n" + _dpLpk[3]);
-                Console.Write("\n\n\n" + _dpLpk[4]);
+                Console.Write("\n\n\n" + _dpLpk[33]);
+                Console.Write("\n\n\n" + _dpLpk[34]);
+                Console.Write("\n\n\n" + _dpLpk[35]);
                 Console.ForegroundColor = ConsoleColor.White;
                 if (_showPermissionFour == true)
                 {
-                    Console.Write("\n\n\n" + _dpLpk[5]);
-                    Console.Write("\t" + _dpLpk[6]);
-                    Console.Write("\t" + _dpLpk[7]);
-                    Console.Write("\t" + _dpLpk[8]);
+                    Console.Write("\n\n\n" + _dpLpk[36]);
+                    Console.Write("\t" + "      " + _dpLpk[37]);
+                    Console.Write("\t" + "      " + _dpLpk[38]);
+                    Console.Write("       " + _dpLpk[39]);
                 }
                 else
                 {
                     Console.WriteLine();
                     Console.WriteLine();
-                    Console.Write("                   " + _dpLpk[26] + "     ");
+                    Console.WriteLine();
+                    Console.Write("                                                           " + _dpLpk[26] + "     ");
                     Console.Write(_dpLpk[27] + "     ");
                     Console.Write(_dpLpk[28] + "     ");
                     Console.Write(_dpLpk[29]);
                 }
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\n\n\n" + _dpLpk[31]);
             }
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("\n\n\n\n\n" + _dpLpk[31]);
             Console.WriteLine("\n");
             Console.ForegroundColor = ConsoleColor.Red;
             if (_showPermissionTwo == true && _showPermissionThree == true)
             {
                 Console.Write(_dpLpk[9]);
                 _userInputs[1] = Console.ReadLine();
+                ApplicationWindowsShellAdaptor(args, _userInputs[1], Console.WindowWidth, Console.WindowHeight);
             }
             else
             {
@@ -124,6 +130,7 @@ namespace Ultimate_ToolBox
                 {
                     Console.Write(_dpLpk[9]);
                     _userInputs[1] = Console.ReadLine();
+                    ApplicationWindowsShellAdaptor(args, _userInputs[1], Console.WindowWidth, Console.WindowHeight);
                 }
             }
             Console.ForegroundColor = ConsoleColor.White;
@@ -150,7 +157,7 @@ namespace Ultimate_ToolBox
         /// <summary>
         /// A method that is able to show some information to the user
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">A 'string[]' type array to support Main method</param>
         public static void ShowBoard(string[] args)
         {
             switch (_userInputs[1])
@@ -186,7 +193,7 @@ namespace Ultimate_ToolBox
         /// <summary>
         /// A user can choose a feature to use with this method
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">A 'string[]' type array to support Main method</param>
         public static void ShowBoardTwo(string[] args)
         {
             switch (_userInputs[1])
@@ -213,7 +220,7 @@ namespace Ultimate_ToolBox
         /// <summary>
         /// A security model to check if the user have a license
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">A 'string[]' type array to support Main Method</param>
         public static void LoginModel(string[] args)
         {
             if (_showPermissionThree == true)
@@ -275,22 +282,42 @@ namespace Ultimate_ToolBox
                 }
             }
         }
+        /// <summary>
+        /// To launch the application: Grades Calculator
+        /// </summary>
+        /// <param name="args">A 'string[]' type array to support Main method</param>
         public static void GradesCalculatorLauncher(string[] args)
         {
             GC gcLauncher = new GC();
             Console.Clear();
             gcLauncher.Indoor(args);
         }
+        /// <summary>
+        /// To launch the application: Word Master
+        /// </summary>
+        /// <param name="args">A 'string[]' type array to support Main method</param>
         public static void WordMasterLauncher(string[] args)
         {
 
         }
+        /// <summary>
+        /// To launch the application: Random Numbers Creator
+        /// </summary>
+        /// <param name="args">A 'string[]' type array to support Main method</param>
         public static void RandomNumbersCreatorLauncher(string[] args)
         {
             RMCreator rm = new RMCreator();
             Console.Clear();
             rm.Indoor(args);
         }
+        /// <summary>
+        /// An inportant shell that is able to control the appearance of the user interface
+        /// </summary>
+        /// <param name="args">A 'string[]' type array to support Main method</param>
+        /// <param name="WindowResetCommand">A 'string' type value, making sure that whether the user want to change the interface</param>
+        /// <param name="Width">A 'int' type value to get the Window's Width</param>
+        /// <param name="Height">A 'int' type value to get the Window's Height</param>
+        /// <returns></returns>
         public static bool ApplicationWindowsShellAdaptor(string[] args, string WindowResetCommand, int Width, int Height)
         {
             //Full Screen --> Width:197 Height:58
@@ -310,9 +337,20 @@ namespace Ultimate_ToolBox
             //In-application Checker
             if (WindowResetCommand.Contains("reset window") || WindowResetCommand.Contains("rewind"))
             {
-                if (Width == 197 && Height == 58)
+                if (_recTimeController == 1)
                 {
-
+                    if (Width == 197 && Height == 58)
+                    {
+                        _WindowAdaptor = true;
+                        Main(args);
+                        return _WindowAdaptor;
+                    }
+                    if (Width == 120 && Height == 30)
+                    {
+                        _WindowAdaptor = false;
+                        Main(args);
+                        return _WindowAdaptor;
+                    }
                 }
             }
             return false;//Normal Screen Mode
