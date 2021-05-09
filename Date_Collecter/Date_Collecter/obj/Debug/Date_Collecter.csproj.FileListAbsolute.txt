@@ -1,0 +1,7 @@
+C:\Users\Everett Lee\source\repos\Date_Collecter\Date_Collecter\obj\Debug\Date_Collecter.csprojAssemblyReference.cache
+C:\Users\Everett Lee\source\repos\Date_Collecter\Date_Collecter\obj\Debug\Date_Collecter.csproj.CoreCompileInputs.cache
+C:\Users\Everett Lee\source\repos\Date_Collecter\Date_Collecter\bin\Debug\Date_Collecter.exe.config
+C:\Users\Everett Lee\source\repos\Date_Collecter\Date_Collecter\bin\Debug\Date_Collecter.exe
+C:\Users\Everett Lee\source\repos\Date_Collecter\Date_Collecter\bin\Debug\Date_Collecter.pdb
+C:\Users\Everett Lee\source\repos\Date_Collecter\Date_Collecter\obj\Debug\Date_Collecter.exe
+C:\Users\Everett Lee\source\repos\Date_Collecter\Date_Collecter\obj\Debug\Date_Collecter.pdb
